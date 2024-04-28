@@ -1,5 +1,7 @@
 ### Hi there 👋
 
+<h2>드론평야 개발팀</h2>
+
 <!--
 **ccy00967/ccy00967** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
