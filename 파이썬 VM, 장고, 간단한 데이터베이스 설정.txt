@@ -1,0 +1,65 @@
+파이썬을 가상환경에서 실행해야한다
+
+가상환경 셋팅)
+    python3 -m venv ./ 
+
+가상환경 실행) bin의 activate를 실행
+    source ./bin/activate
+
+장고 설치)
+    pip install django
+
+설치확인) 가상환경에서만 확인가능
+    django-admin
+버전확인)
+    django-admin --version
+
+장고 rest framwork 설치)
+    pip install djangorestframework
+
+장고 프로젝트 생성)
+    django-admin startproject [프로젝트명] [프로젝트위치]
+ex) django-admin startproject myproject . -> 현재파일에 생성
+
+장고 실행) startproject로 생성된 manage.py로 여러 명령어 실행
+    python3 manage.py
+
+장고 서버 실행) 포트 변경은 2번째줄
+    python3 manage.py runserver -> 기본포트는 8000
+    python3 manage.py runserver [포트번호]
+ *같은 네트워크의 다른 컴퓨터에서 서버접속하게 하기
+    python3 manage.py runserver 0.0.0.0:8000 //이건 왜인지 안된다
+    python3 manage.py runserver [리액트에서 얻은 주소]:8000
+
+
+장고는 프로젝트에 바로 코드를 입력하는 것이 아닌 app이라는 작은 단위 여러개로 구성한다
+ex) project (urls.py ->)app(1번) -> view, model -> DB
+            (urls.py ->)app(2번) -> view
+
+장고 app 만들기)
+    django-admin startapp myapp
+
+
+데이터베이스 접속방법) postgres의 서버가 실행중이어야함
+psql postgres
+
+사용자 알아내기)
+\du
+데이터베이스 조회 - 데이터베이스 이름, 소유주도 나옴
+\l (또는 \list)
+
+postgres 데이터베이스 만들기) 세미콜론에 주의!, 대소구분 없는듯?
+CREATE DATABASE [데이터베이스 이름]; 
+확인문구)
+CREATE DATABASE
+
+생성한 데이터베이스 소유주 바꾸기) - 스키마 에러 발생시
+ALTER DATABASE [DB 이름] OWNER TO [사용자이름];
+확인문구)
+ALTER DATABASE
+
+모든 테이블 이름 가져오기)
+\dt (또는 SELECT * FROM pg_catalog.pg_tables;)
+
+테이블 내용 완전 삭제 명령어)
+truncate table [테이블이름];
