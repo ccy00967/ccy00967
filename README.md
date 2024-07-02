@@ -1,7 +1,7 @@
 <h2>채철영입니다</h2>
 
 <h3>기술 스택<h3>
-<img alt="c" src ="https://img.shields.io/badge/C-#A8B9CC.svg?&style=for-the-badge&logo=C&logoColor=white"/>
+<img alt="c" src ="https://img.shields.io/badge/c-#A8B9CC.svg?&style=for-the-badge&logo=c&logoColor=white"/>
 
 <!--
 **ccy00967/ccy00967** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
