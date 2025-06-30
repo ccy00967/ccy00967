@@ -8,7 +8,7 @@ Chae, Chul Young
 
 ### Interests
 
-- FE/BE
+- BE
 - Cloud Infrastructure
 
 ---
